@@ -2,7 +2,7 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  /*
+  
 let decimal = 0;
 let numArray = num.split('');
 for (let i = 0; i < numArray.length; i++) {
@@ -10,11 +10,15 @@ for (let i = 0; i < numArray.length; i++) {
 }
 return decimal;
 }
-*/
+
+
+// return parseInt(num, 2)
+
+/*
 return num.split('').reverse().map(function(element, index) {
   return element * Math.pow(2, index);
 }).reduce( (a,b) => a + b);
-}
+}*/
 
 function DecimalABinario(num) {
   // tu codigo aca
@@ -27,6 +31,7 @@ while (numero > 0) {
 }
 return array.join('');
 }
+// return num.toString(2);
 
 
 module.exports = {
