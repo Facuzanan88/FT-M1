@@ -12,21 +12,26 @@ function BinarySearchTree(value) {
   this.value = value;
   this.right = null;
   this.left = null;
+  this.lenght;
 }
 
 BinarySearchTree.prototype.insert = function (value) {
   if (value < this.value) {
     if (!this.left) {
       this.left = new BinarySearchTree(value);
+      this.leght++;
     } else {
       this.left.insert(value);
+      this.length++;
     }
   }
   if (value > this.value) {
     if (!this.right) {
       this.right = new BinarySearchTree(value);
+      this.legth++;
     } else {
       this.right.insert(value);
+      this.leght++;
     }
   }
 }
