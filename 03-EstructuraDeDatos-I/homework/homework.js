@@ -25,11 +25,9 @@ function nFibonacci(n) {
   if (n === 0) { return 0; }
   else if (n === 1) { return 1; }
   else {
-    fibonacci = nFibonacci(n - 1) + nFibonacci(n - 2)
+    return nFibonacci(n - 1) + nFibonacci(n - 2);
   }
-  return fibonacci;
 }
-
 
 // Para esta parte no es necesario utilizar recursión.
 // Implementa la clase Queue que debe contener los siguientes métodos:
